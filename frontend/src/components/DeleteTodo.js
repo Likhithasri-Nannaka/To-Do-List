@@ -3,7 +3,7 @@ import React from 'react';
 const DeleteTodo = ({ id }) => {
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/todos/${id}`, {
+      const response = await fetch(`http://localhost:10000/api/todos/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

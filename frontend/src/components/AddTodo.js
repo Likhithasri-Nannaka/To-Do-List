@@ -9,7 +9,7 @@ const AddTodo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/todos', {
+      const response = await fetch('http://localhost:10000/api/todos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
