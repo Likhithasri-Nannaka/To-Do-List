@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Register from './components/Register';
 import Login from './components/Login';
 import TodoList from './components/Todo';
@@ -17,10 +17,9 @@ function App() {
       <Route path="/add-todo" element={<AddTodo />} />
       <Route path="/update-todo/:id" element={<UpdateTodo />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/" element={<Navigate to="/login" />} />
     </Routes>
   );
 }
 
 export default App;
-
-
