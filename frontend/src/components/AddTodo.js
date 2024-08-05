@@ -9,7 +9,7 @@ const AddTodo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:10000/api/todos', {
+      const response = await fetch('http://to-do-list-1-i7w0.onrender.com/api/todos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

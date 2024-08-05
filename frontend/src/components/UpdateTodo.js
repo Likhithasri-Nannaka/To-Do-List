@@ -10,7 +10,7 @@ const UpdateTodo = () => {
   useEffect(() => {
     const fetchTodo = async () => {
       try {
-        const response = await fetch(`http://localhost:10000/api/todos/${id}`, {
+        const response = await fetch(`http://to-do-list-1-i7w0.onrender.com/api/todos/${id}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const UpdateTodo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:10000/api/todos/${id}`, {
+      const response = await fetch(`http://to-do-list-1-i7w0.onrender.com/api/todos/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

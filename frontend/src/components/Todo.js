@@ -10,7 +10,7 @@ const TodoList = () => {
   useEffect(() => {
     const fetchTodos = async () => {
       try {
-        const response = await fetch('http://localhost:10000/api/todos', {
+        const response = await fetch('http://to-do-list-1-i7w0.onrender.com/api/todos', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
